@@ -27,5 +27,8 @@ jobs:
     agents:
         name: Nx Cloud - Agents
         uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.6
+        env:
+            NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
         with:
             number-of-agents: 2
+
