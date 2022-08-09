@@ -27,8 +27,7 @@
         "format": "nx format",
         "format:ci": "nx format:check",
         "type:check": "nx build ligo-virgo",
-        "prepare": "husky install",
-        "change": "a change"
+        "prepare": "husky install"
     },
     "private": true,
     "engines": {
