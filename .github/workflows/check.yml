@@ -20,7 +20,6 @@ jobs:
             number-of-agents: 2
             parallel-commands: |
                 pnpm exec nx-cloud record -- pnpm exec nx format:check
-                pnpm e2e:ci ${{ github.ref == 'refs/heads/develop' && '--record' || '' }}
             parallel-commands-on-agents: |
                 pnpm exec nx affected --target=lint --parallel=2 --exclude=components-common,keck,theme
                 pnpm exec nx affected --target=build --parallel=2
